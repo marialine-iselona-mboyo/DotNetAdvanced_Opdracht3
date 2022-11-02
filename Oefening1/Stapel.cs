@@ -37,10 +37,18 @@ namespace Oefening1
             stapel.Add(toevoegen);
         }
 
-        public T Verwijderen(T verwijder)
+        public T Verwijderen()
         {
-            stapel.Remove(verwijder);
-            return verwijder;
+            if (stapel.Count > 0)
+            {
+                throw new ArgumentNullException();
+            }
+
+            T newStapel = stapel[stapel.Count - 1];
+            stapel.RemoveAt(stapel.Count - 1);
+
+            return newStapel;
+
         }
 
         public void Leegmaken()
@@ -56,20 +64,14 @@ namespace Oefening1
 
         public bool isAanwezig(T zoeken)
         {
-            foreach (T t in stapel)
-            {
-                if (t.ToString() == zoeken.ToString())
-                {
-                    return true;
-                }
-            }
-            return false;
+            return stapel.Contains(zoeken);
         }
 
-        public List<T> listCopy()
+        public Stapel<T> listCopy()
         {
             stapelcopy= stapelcopy.GetRange(0, stapel.Count);
-            return stapelcopy;
+
+            return (Stapel<T>)this.MemberwiseClone();
         }
 
 

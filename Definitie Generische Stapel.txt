@@ -1,6 +1,0 @@
-Definitie van de generische stapel:
-
-
-De Generische Stapel in C# is een collectieklasse die werkt volgens het principe 
-"Last In First Out" (LIFO) en deze klasse is aanwezig in de naamruimte System.Collections.Generic. 
-De Generic Stack Collection wordt gebruikt wanneer we "Last In First Out" (LIFO)-toegang tot items nodig hebben.

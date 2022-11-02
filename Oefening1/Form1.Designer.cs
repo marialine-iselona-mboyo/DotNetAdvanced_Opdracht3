@@ -45,6 +45,8 @@
             this.labelInt = new System.Windows.Forms.Label();
             this.labelStr = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnShowStr = new System.Windows.Forms.Button();
+            this.btnShowInt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -200,9 +202,29 @@
             this.label3.TabIndex = 16;
             this.label3.Text = "label3";
             // 
+            // btnShowStr
+            // 
+            this.btnShowStr.Location = new System.Drawing.Point(578, 217);
+            this.btnShowStr.Name = "btnShowStr";
+            this.btnShowStr.Size = new System.Drawing.Size(186, 34);
+            this.btnShowStr.TabIndex = 17;
+            this.btnShowStr.Text = "Show List Strings";
+            this.btnShowStr.UseVisualStyleBackColor = true;
+            // 
+            // btnShowInt
+            // 
+            this.btnShowInt.Location = new System.Drawing.Point(578, 362);
+            this.btnShowInt.Name = "btnShowInt";
+            this.btnShowInt.Size = new System.Drawing.Size(186, 34);
+            this.btnShowInt.TabIndex = 18;
+            this.btnShowInt.Text = "Show List Integers";
+            this.btnShowInt.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(873, 714);
+            this.Controls.Add(this.btnShowInt);
+            this.Controls.Add(this.btnShowStr);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.labelStr);
             this.Controls.Add(this.labelInt);
@@ -245,5 +267,7 @@
         private Label labelInt;
         private Label labelStr;
         private Label label3;
+        private Button btnShowStr;
+        private Button btnShowInt;
     }
 }
